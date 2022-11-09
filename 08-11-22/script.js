@@ -1,3 +1,5 @@
+
+
 const cardAll = document.createElement("div");
 cardAll.className = "allCards";
 const bodyEl = document.querySelector("body");
@@ -21,24 +23,8 @@ const createCardPokemon = (data) => {
     cardNameEl.textContent = data.name;
     cardTypeEl.textContent = `Type: ${data.types[0].type.name}`;
 
-
-
-    cardEl.append(cardImgEl, cardIdEl, cardNameEl, cardTypeEl);
-    cardAll.append(cardEl);
-    bodyEl.appendChild(cardAll);
-
-}
-
-
-fetch("https://pokeapi.co/api/v2/pokemon/?limit=150")
-    .then((res) => res.json())
-    .then((poke) => {
-        poke.results.forEach((item) => fetch(item.url)
-            .then((res) => res.json()
-                .then((pokemon) => createCardPokemon(pokemon))))
-    });
-
-    const ColorCard = {
+    // background color alle card
+    const colors = {
         electric: '#FCF7DE',
         water: '#DEF3FD',
         ground: '#f4e7da',
@@ -55,3 +41,23 @@ fetch("https://pokeapi.co/api/v2/pokemon/?limit=150")
         ghost: "#705898",
         ice: "#98d8d8",
     };
+    const colorCard = colors[data.types[0].type.name];
+    cardEl.style.background = colorCard;
+    
+//   fine background
+
+    cardEl.append(cardImgEl, cardIdEl, cardNameEl, cardTypeEl);
+    cardAll.append(cardEl);
+    bodyEl.appendChild(cardAll);
+
+}
+
+
+fetch("https://pokeapi.co/api/v2/pokemon/?limit=150")
+    .then((res) => res.json())
+    .then((poke) => {
+        poke.results.forEach((item) => fetch(item.url)
+            .then((res) => res.json()
+                .then((pokemon) => createCardPokemon(pokemon))))
+    });
+
