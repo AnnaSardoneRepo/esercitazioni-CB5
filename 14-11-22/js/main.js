@@ -7,7 +7,26 @@ const pokemonType = q(".poke-type")
 const pokemonAvatar = q(".poke-avatar")
 const btnPrev = q(".btn-prev")
 const btnNext = q(".btn-next")
-const loader = q(".loading")
+
+
+
+// seleziono loading div
+const loader = document.querySelector(".lds-ring");
+
+// mostro loading
+function displayLoading() {
+  loader.classList.add("display");
+
+  // stop loading dopo tot secondi
+  setTimeout(() => {
+      loader.classList.remove("display");
+  }, 200);
+}
+
+// nascondo loading 
+function hideLoading() {
+  loader.classList.remove("display");
+}
 
 // variabili globali
 const url = "https://pokeapi.co/api/v2/pokemon"
@@ -17,11 +36,13 @@ let index = 1;
 btnPrev.addEventListener('click', (e) => {
 	let instruction = e.target.textContent;
 	getPokemon(instruction)
+	displayLoading();
 })
 
 btnNext.addEventListener('click', (e) => {
 	let instruction = e.target.textContent;
 	getPokemon(instruction)
+	displayLoading();
 })
 
 const getPokemon = (instruction) => {
