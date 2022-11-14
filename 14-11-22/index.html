@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>14 novembre 2022</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon - Single Card</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+     
+    <section class="container">
+      <!-- CARD -->
+      <div class="card">
+        <div class="card__img">
+          <img class="poke-avatar" src="" alt="image Pokemon" />
+        </div>
+        <div class="card__info">
+          <h2 class="poke-name"></h2>
+          <span class="poke-id"></span>
+          <p class="poke-type"></p>
+        </div>
+      </div>
+      <!-- END CARD -->
+      
+      <!-- BUTTONS -->
+      <div class="btns">
+        <button class="btn-prev">Prev</button>
+        <button class="btn-next">Next</button>
+      </div>
+      <!-- END BUTTONS -->
+    </section>
+
+    <!-- SCRIPT -->
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/utils.js"></script>
+  </body>
 </html>
