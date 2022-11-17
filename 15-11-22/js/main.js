@@ -1,4 +1,4 @@
-import {cr, q, GET, POST} from './utils.js'
+import {c, q, GET, POST, uuidv4 } from './utils.js'
 
 const form = document.forms.pokemon;
 const element = form.elements;
@@ -23,4 +23,4 @@ form.addEventListener("submit", (e) => {
 
 })
 
-window.onload = GET(url).then(res => res.map(pkm => ul.innerHTML += `<li>${pkm.name}</li>``<li>${pkm.type}</li>`));
+window.onload = GET(url).then(res => res.map(pkm => ul.innerHTML += `<li>${pkm.name}</li> + <li>${pkm.type}</li>`));

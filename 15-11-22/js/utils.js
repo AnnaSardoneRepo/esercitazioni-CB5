@@ -1,6 +1,6 @@
 
 //  creo funzione per creare elementi HTML
-const cr = (el) => document.createElement(el);
+const c = (el) => document.createElement(el);
 // creo funzione per selezionare le classi
 const q = (el) => document.querySelector(el);
 
@@ -33,4 +33,4 @@ function uuidv4() {
 	);
 }
 
-export { cr, q, GET, POST, uuidv4 }
+export { c, q, GET, POST, uuidv4 }
