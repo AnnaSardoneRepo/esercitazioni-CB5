@@ -23,4 +23,4 @@ form.addEventListener("submit", (e) => {
 
 })
 
-window.onload = GET(url).then(res => res.map(pkm => ul.innerHTML += `<li>${pkm.name}</li> + <li>${pkm.type}</li>`));
+window.onload = GET(url).then(res => res.map(pkm => ul.innerHTML += `<li>${pkm.name} + ${pkm.type}</li>`));
