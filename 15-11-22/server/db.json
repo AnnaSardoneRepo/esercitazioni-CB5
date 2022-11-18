@@ -1,17 +1,12 @@
 {
   "pokemon": [
     {
-      "id": 1,
-      "name": "Bulbasarur",
-      "type": "grass"
+      "id": "d815316e-61be-42f0-b10b-2711a44410d8",
+      "name": "charm",
+      "type": "fire"
     },
     {
-      "id": 2,
-      "name": "Ivysaur",
-      "type": "grass"
-    },
-    {
-      "id": 3,
+      "id": "d815316e-61be-42f0-b10b-2711a44410d81",
       "name": "Venusaur",
       "type": "grass"
     }
