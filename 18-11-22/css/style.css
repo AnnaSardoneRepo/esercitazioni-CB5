@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 17px;
+    background-color: #faf1f8;
+}
+h1 {
+  text-align: center;
+    margin-bottom: 20px;
+}
+
+h2{
+    color: #c54ab5;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+}
+
+.container_form{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .container{
+    color: #fff;
+    background-color: #c54ab5;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.cards{
+  display: flex;
+  color: #fff;
+  background-color: #c54ab5;
+}
+
+
+.form{
+display: flex;
+justify-content: center;
+align-items: stretch;
+}
+
+.formPatch{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.cards{
+  display: flex;
+  justify-content: center;
+}
+
+.cards__list {
+  display: flex;
+  flex-direction: column;
+
+  list-style: none;
+}
+
+.cards__list li{
+  padding: 20px;
+}
+.divCard{
+  border: 1px solid #fff;
+  padding: 20px;
+}
+.nameEle{
+  margin-right: 20px;
+}
+
+input{
+    margin-bottom: 20px;
+    padding: 16px 32px;
+    border: 1px solid #c54ab5;
+    border-radius: 3px ;
+}
+
+.btn-sub {
+    background-color: #c54ab5;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .btn-sub:hover, .btnDelete:hover {
+    background-color: #f1a2dd;
+    box-shadow: 0 0 3px 2px #c54ab5;
+  }
+
+.btnDelete {
+  background-color: hsl(0, 0%, 100%);
+    border: none;
+    color: #c54ab5;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.btnEdit{
+  background-color: hsl(0, 0%, 67%);
+  border: none;
+  color: #c54ab5;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 20px;
+  transition-duration: 0.4s;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+  /* background cards */
+  .bg-grass {
+    background-color: #DEFDE0;
+  }
+  
+  .bg-electric {
+    background-color: #FCF7DE;
+  }
+  
+  .bg-water {
+    background-color: #DEF3FD;
+  }
+  
+  .bg-ground {
+    background-color: #f4e7da;
+  }
+  
+  .bg-rock {
+    background-color: #d5d5d4;
+  }
+  
+  .bg-fairy {
+    background-color: #fceaff;
+  }
+  
+  .bg-poison {
+    background-color: #c3c5fd;
+  }
+  
+  .bg-bug {
+    background-color: #f8d5a3;
+  }
+  
+  .bg-dragon {
+    background-color: #97b3e6;
+  }
+  
+  .bg-psychic {
+    background-color: #eaeda1;
+  }
+  
+  .bg-flying {
+    background-color: #F5F5F5;
+  }
+  
+  .bg-fighting {
+    background-color: #E6E0D4;
+  }
+  
+  .bg-normal {
+    background-color: #F5F5F5;
+  }
+  
+  .bg-fire {
+    background-color: #FDDFDF;
+  }
+  
+  .bg-ghost {
+    background-color: #705898;
+  }
+  
+  .bg-ice {
+    background-color: #98d8d8;
+  }
+  
