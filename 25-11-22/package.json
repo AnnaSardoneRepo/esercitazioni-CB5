@@ -1,7 +1,7 @@
 {
   "name": "calcolatrice",
   "version": "1.0.2",
-  "description": "Un altra calcolatrice",
+  "description": "Un'altra calcolatrice",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
