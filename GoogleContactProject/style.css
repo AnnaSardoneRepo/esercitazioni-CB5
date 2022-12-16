@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+  --google-blue: #4285F4;
+  --google-orange: #EA4335;
+  --google-yellow: #FBBC05;
+  --google-green: #34A853;
+  --text-color:#5f6368;
+  --bg-primary:#ffffff;
+  --bg-secondary:#4285F4;
+  --bg-stripe: #f5f5f5;
+  --favourite: #d80505;
+}
+.blue{
+  background-color:#4285F4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  /* scroll-behavior: smooth; */
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+ color: var(--text-color);
+  background-color: var(--bg-primary);
+  padding: 1rem;
+}
+
+h4 {
+  text-transform: uppercase;
+  margin: 25px 0px 10px 0px;
+}
+
+nav{
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding: 5px 5px 20px;
+  /* border-bottom: 1px solid lightgray; */
+  background-color: #fff;
+}
+
+.userAdmin{
+  position: absolute;
+  right:7px;
+  color: #ffffff;
+  background-color: var(--google-orange);
+  border-radius: 50%;
+}
+
+.google-border {
+  width: calc(100vw -10px);
+  border-top: 3px solid;
+  border-image:   linear-gradient(to right, var(--google-blue) 25%, var(--google-green) 25%, var(--google-green) 50%,var(--google-orange) 50%, var(--google-orange) 75%, var(--google-yellow) 75%) 5;
+}
+
+#circleGoo{
+  position: absolute;
+  right:5px;
+}
+
+#loghettoContacts{
+  width: 40px;
+  margin-right: 10px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container{
+  margin-top: 20px;
+}
+
+.both{
+  display: flex;
+  align-items: center;
+}
+
+.searcher{
+flex-grow: 8;
+}
+
+.btn-create{
+  flex-grow: 3;
+  text-align: right;
+}
+/* searchbar */
+#searchBar {
+  width: 100%;
+  height: 60px;
+  border-radius: 40px;
+  border: 1px solid #eaeaea;
+  background-color: #4286f422;
+  padding: 5px 15px;
+  font-size: 13px;
+}
+#searchBar:hover {
+  border: 1px solid #eaeaea;
+  background-color: white;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3); 
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+outline: none;
+}
+
+#searchWrapper {
+  position: relative;
+}
+
+#searchWrapper::before {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f002";
+  font-weight: 900;
+  position: absolute;
+  top: 23px;
+  right: 15px;
+}
+.btn-gooCreate{
+  max-width: 180px;
+background-color: #ffffff;
+border: 1px solid lightgray;
+border-radius: 50px;
+padding: 10px 20px;
+margin-left: 10px;
+text-align: right;
+cursor: pointer;
+}
+
+.btn-gooCreate:hover{
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3); 
+}
+
+
+/* liste contatti */
+
+ul{
+  display:flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+li { 
+  border-bottom: 1px solid rgb(212, 216, 220);
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li:hover{
+  background-color: var(--bg-stripe);
+  cursor: pointer;
+}
+
+li span{
+  margin-right: 10px;
+}
+
+li span img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border:2px solid var(--google-blue);
+}
+a {
+  text-decoration: none;
+}
+/* a .ico_no_fav{
+  color: var(--text-color)
+}
+
+a .ico_fav{
+  color: var(--favourite)
+} */
+/* ul#contactsList a {
+  background-color: green;
+} */
+/******* TOOLTIP *******/
+
+/* Add this attribute to the element that needs a tooltip */
+
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+/* Position tooltip above the element */
+
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 150%;
+  right: 5px;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 160px;
+  border-radius: 2px;
+  border: 1px outset #C0C0C0;
+  background-color:var(--text-color);
+  color: #FFFFFF;
+  content: attr(data-tooltip);
+  text-align: center;
+  overflow-wrap: break-word;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/* Triangle */
+
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 150%;
+right:5px;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-top: 5px solid var(--text-color);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+/* Show tooltip content on hover */
+
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/****** fine tooltip *******/
+
+.toggle-content {
+	display: none;
+}
+
+.toggle-content.is-visible {
+	display: flex;
+}
+
+
+
+/* FOOTER */
+.myFooter{
+  background-color: #171717;
+  color:var(--google-orange);
+  padding: 50px;
+  text-align: center;
+  }
+
+  /* BTN GO TO TOP */
+  .btn_top {
+    opacity: 0.8;
+      position: fixed;
+      bottom: 20px;
+      right: 14px;
+      z-index: 99; 
+      width: 80px;
+      height: 80px;
+      cursor: pointer; 
+      padding: 6px; 
+      background-color: #4286f423;
+      border-radius: 50px;
+  }
+  .hidden {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px){
+    .both{
+      display: block;
+    }
+    .btn-create{
+      margin-top: 20px;
+      text-align: right;
+    }
+    .aka, .email{
+      display: none;
+    }
+    li{
+      justify-content: space-between;
+    }
+   .btn_top {
+        width: 60px ;
+        height: 60px ;
+        bottom: 13px;
+    }
+    .myFooter {
+      padding: 20px;
+  }
+  }
+
+  /* MODAL */
+  
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 3; 
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form{
+  display: block;
+    margin: 10px;
+    padding: 10px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.saveBtn {
+  background-color: var(--google-blue);
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.saveBtn:hover {
+  opacity:1;
+}
+.avatar{
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
