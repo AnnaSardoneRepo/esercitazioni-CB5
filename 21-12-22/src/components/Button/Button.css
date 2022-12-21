@@ -1,0 +1,29 @@
+
+.Button{
+    background-color: #fff;
+    border: 1px solid rgb(101, 99, 99);
+    border-radius: .4rem;
+    padding: .4rem .8rem;
+    margin: .4rem;
+}
+.Button:hover{
+    text-decoration: underline;
+    text-underline-offset: .2rem;
+    text-decoration-thickness: .2rem;
+    text-decoration-color: yellow;
+}
+
+.Button--variant-primary{
+background-color: rgb(140, 214, 251);
+border: none;    
+}
+
+.Button--variant-secondary{
+    background-color: rgb(241, 151, 245);
+    border: none;    
+    }
+
+.Button--variant-disabled{
+    background-color: rgb(193, 193, 193);
+}
+
