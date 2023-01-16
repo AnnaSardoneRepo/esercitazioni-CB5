@@ -17,7 +17,8 @@ const Post = ({data})=> {
         <img className="avatar" src={photo.thumbnailUrl} alt="avatar" />
         <div className="textPost">
         <h4>@{user.name}</h4>
-        <p>{data.title}</p>
+        <h5>{data.title}</h5>
+        <p>{data.body}</p>
         
         </div>
         
