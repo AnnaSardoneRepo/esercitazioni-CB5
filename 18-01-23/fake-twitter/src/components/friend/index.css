@@ -1,0 +1,6 @@
+.Friend {
+  border: 1px solid red;
+    display: flex;
+    gap: 20px;
+  }
+  

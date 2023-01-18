@@ -1,0 +1,31 @@
+.InputPost{
+  border: 1px solid rgb(227, 227, 227);
+  padding: 10px;
+}
+
+.InputPost form {
+display: flex;
+flex-direction: column;
+}
+
+
+  .InputPost form input{
+    background-color: #84789e3f;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 4px;
+    cursor: pointer;
+
+  }
+  .InputPost form input::placeholder{
+    color: #445886;
+  }
+  .InputPost form input[type=submit]{
+    background-color: #445886;
+    color: #fff;
+    margin-top: 8px;
+  }

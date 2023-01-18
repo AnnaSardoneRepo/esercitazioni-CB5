@@ -1,0 +1,12 @@
+.PostList{
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #84789e3f;
+    height: 100vh;
+    max-width: 800px;
+    overflow-y: scroll;
+}
+
