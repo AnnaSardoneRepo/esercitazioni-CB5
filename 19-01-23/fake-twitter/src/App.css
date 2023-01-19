@@ -1,0 +1,71 @@
+.App {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e1dee742;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 8px solid #e1dee742;
+  padding: 4px;
+}
+
+.logo {
+  width: 100px;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  letter-spacing: 4px;
+  color: #445886;
+  margin: -23px 0px 0px 34px;
+}
+
+.yelloow{
+  color: #e6a030;
+}
+
+.mainSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 800px) {
+  body {
+    /* overflow-y: hidden; */
+  }
+
+  .App {
+    padding-top: 30px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* overflow-y: scroll; */
+  }
+
+  .friendsSection {
+    /* box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px; */
+    padding: 4px;
+    background-color: #fff;
+    width: 25%;
+    height: 100vh;
+    /* overflow-y: scroll; */
+  }
+  .mainSection {
+    width: 100%;
+  }
+
+  .popularSection {
+    border: 1px solid blue;
+    padding: 24px;
+    background-color: rgb(242, 242, 242);
+    width: 25%;
+  }
+}

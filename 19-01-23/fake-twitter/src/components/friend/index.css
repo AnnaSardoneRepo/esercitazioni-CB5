@@ -1,0 +1,15 @@
+.Friend {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background-color: #e6d5bb47;
+  padding: 8px;
+  width: -webkit-fill-available;  
+}
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid #e6a030;
+}
