@@ -1,0 +1,25 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: red;
+  gap: 20px;
+}
+
+.Error{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image{
+  max-width: 500px;
+}
+
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
