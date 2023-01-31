@@ -1,22 +1,37 @@
-.User{
+.User, .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    gap: 10px;
+
+
+  
 }
-.content{
+.Info{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    gap: 10px;
-    background-color: rgb(219, 219, 219);
-
+    background: rgb(238, 238, 238);
+    padding: 20px 40px;
+    .avatar{
+        width: 150px;
+        background-color: #fff;
+        border: 1px solid grey;
+        border-radius: 100%;
+    }
 }
 
-.buttons {
-    display: flex;
-    gap: 10px;
-  }
+
+// .buttons {
+//     display: flex;
+//     gap: 10px;
+//   }
+
+
+
+@media screen and (min-width: 800px) {
+
+
+}

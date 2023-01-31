@@ -5,12 +5,12 @@ import styles from "./styles/root.module.scss";
     return (
       <>
         <div className={styles.Root}>
-          <h1>Citazioni</h1>
-          <Link to="/messages/1">Vai alla prima citazione</Link>
+          <h1>Quotes</h1>
+          <Link to="/messages/1">Go to the first quote</Link>
         </div>
         <div className={styles.Root}>
-          <h1>Utenti</h1>
-          <Link to="/users/1">Vai al primo utente</Link>
+          <h1>Homepage</h1>
+          <Link to="/">Back to Home</Link>
         </div>
       </>
     );

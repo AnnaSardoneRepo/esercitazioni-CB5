@@ -1,0 +1,10 @@
+.User{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid grey;
+    padding: 10px;
+    .imgUser{
+        width: 100px;
+    }
+}

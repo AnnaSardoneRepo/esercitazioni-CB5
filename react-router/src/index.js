@@ -8,6 +8,7 @@ import {
 import Root from './routes/root';
 import Quote from "./routes/quote";
 import User from './routes/user';
+import Users from './routes/users'
 import ErrorPage from "./error-page";
 import './index.css';
 
@@ -17,10 +18,7 @@ const router = createBrowserRouter([
     element: <App/>,
     errorElement:<ErrorPage/>
   },
-  // {
-  //   path: "/contacts",
-  //   element: <Root/>,
-  // },
+
   {
     path: "/messages",
     element: <Root/>,
@@ -31,10 +29,10 @@ const router = createBrowserRouter([
   },
   {
     path: "/users",
-    element: <Root/>,
+    element: <Users />,
   },
   {
-    path: "/users/:user",
+    path: "users/:user",
     element: <User />,
   },
 ]);
