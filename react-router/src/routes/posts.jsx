@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import SinglePost from '../components/SinglePost';
 import styles from "../routes/styles/posts.module.scss"
 
@@ -15,7 +15,8 @@ export default function Root() {
 
     return (
     
-      <div className={styles.Posts}>
+<>
+<div className={styles.Posts}>
         <div className={styles.Header}>
           <h1>All Posts</h1>
           <Link to={`/messages`} className={styles.Link}>Go to Quotes</Link>
@@ -32,5 +33,6 @@ export default function Root() {
           }
         </div>
       </div>
+</>
     );
   }

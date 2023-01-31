@@ -3,20 +3,20 @@ import { useState, useEffect } from "react";
 import styles from "../routes/styles/post.module.scss";
 
 export default function Post() {
-    let {post} = useParams(); 
+    let {postId} = useParams(); 
 
     const navigate = useNavigate();
  
     const [postData, setPostData] = useState({})
 
  useEffect(()=>{
-  fetch(`https://dummyjson.com/posts/${post}`)
+  fetch(`https://dummyjson.com/posts/${postId}`)
   .then(res => res.json())
   .then(data => setPostData(data))
- },[post])
+ },[postId])
 
- const onClickPrevBtn = () => navigate(`/posts/${--post}`);
- const onClickNextBtn = () => navigate(`/posts/${++post}`);
+ const onClickPrevBtn = () => navigate(`/posts/${--postId}`);
+ const onClickNextBtn = () => navigate(`/posts/${++postId}`);
 
   return (
     <div className={styles.Post}>

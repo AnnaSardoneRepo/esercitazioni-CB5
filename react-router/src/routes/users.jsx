@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import SingleUser from '../components/SingleUser';
 import styles from "../routes/styles/users.module.scss"
 
@@ -14,7 +14,7 @@ export default function Root() {
 }, [])
 
     return (
-    
+    <>
       <div className={styles.Users}>
         <div className={styles.Header}>
           <h1>All Users</h1>
@@ -31,5 +31,7 @@ export default function Root() {
           }
         </div>
       </div>
+      <Outlet/>
+      </>
     );
   }

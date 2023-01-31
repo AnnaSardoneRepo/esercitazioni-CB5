@@ -1,25 +1,27 @@
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, useNavigate, Link, Outlet } from "react-router-dom";
 import { useState, useEffect } from "react";
 import styles from "../routes/styles/user.module.scss";
 
 export default function User() {
-    let {user} = useParams(); 
+    let {userId} = useParams(); 
 
     const navigate = useNavigate();
  
     const [userData, setUserData] = useState({})
 
  useEffect(()=>{
-  fetch(`https://dummyjson.com/users/${user}`)
+
+  fetch(`https://dummyjson.com/users/${userId}`)
   .then(res => res.json())
   .then(data => setUserData(data))
- },[user])
+ },[userId])
 
- const onClickPrevBtn = () => navigate(`/users/${--user}`);
- const onClickNextBtn = () => navigate(`/users/${++user}`);
+ const onClickPrevBtn = () => navigate(`/users/${--userId}`);
+ const onClickNextBtn = () => navigate(`/users/${++userId}`);
 
   return (
-    <div className={styles.User}>
+   <>
+    <div className={styles.User} >
       <h1>Single User</h1>
   
       <div className={styles.container}>
@@ -41,5 +43,7 @@ export default function User() {
         </div>
 
     </div>
+    <Outlet/>
+   </>
   );
 }

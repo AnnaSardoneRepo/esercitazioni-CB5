@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import {Link, Outlet} from "react-router-dom";
 import styles from "./styles/root.module.scss";
 
     export default function Root() {
@@ -13,9 +13,14 @@ import styles from "./styles/root.module.scss";
           <Link to="/users/">Go to Users</Link>
         </div>
         <div className={styles.Root}>
+          <h1>Posts</h1>
+          <Link to="/posts/">Go to Posts</Link>
+        </div>
+        <div className={styles.Root}>
           <h1>Homepage</h1>
           <Link to="/">Back to Home</Link>
         </div>
+        <Outlet/>
       </>
     );
   }
