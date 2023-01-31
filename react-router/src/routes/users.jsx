@@ -17,7 +17,8 @@ export default function Root() {
       <div className={styles.Users}>
         <div className={styles.Header}>
           <h1>All Users</h1>
-          <Link to={`/`} className={styles.Link}>Torna alla Home</Link>
+          <Link to={`/messages`} className={styles.Link}>Go to Quotes</Link>
+          <Link to={`/`} className={styles.Link}>Back to Home</Link>
         </div>
         <div className={styles.List}>
           {
