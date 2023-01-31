@@ -9,6 +9,8 @@ import Root from './routes/root';
 import Quote from "./routes/quote";
 import User from './routes/user';
 import Users from './routes/users'
+import Post from './routes/post';
+import Posts from './routes/posts'
 import ErrorPage from "./error-page";
 import './index.css';
 
@@ -34,6 +36,15 @@ const router = createBrowserRouter([
   {
     path: "users/:user",
     element: <User />,
+  },
+  
+  {
+    path: "/posts",
+    element: <Posts />,
+  },
+  {
+    path: "posts/:post",
+    element: <Post />,
   },
 ]);
 

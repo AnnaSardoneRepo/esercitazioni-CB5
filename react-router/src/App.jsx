@@ -7,6 +7,7 @@ function App() {
       <h1>Welcome</h1>
       <Link to="/messages">Quotes</Link>
       <Link to="/users">Users</Link>
+      <Link to="/posts">Posts</Link>
     </div>
   );
 }

@@ -1,0 +1,28 @@
+.Post, .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+
+  
+}
+.Info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(238, 238, 238);
+    width: 500px;
+    padding: 20px 40px;
+   
+}
+
+
+// .buttons {
+//     display: flex;
+//     gap: 10px;
+//   }
+
+
