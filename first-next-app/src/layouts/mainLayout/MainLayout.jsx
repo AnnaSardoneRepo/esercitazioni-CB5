@@ -1,13 +1,13 @@
-import Navbar from "@/components/navbar";
-import styles from "./index.scss";
+import Navbar from "../../components/navbar";
+import styles from "./index.module.scss";
 
-const MainLayout = ({children}) => {
+const MainLayout = ({ children }) => {
   return (
-    <div className={styles.MainLayout}>
-        <Navbar/>
-        {children}
+    <div className="MainLayout">
+      <Navbar />
+      {children}
     </div>
-  )
-}
+  );
+};
 
 export default MainLayout
