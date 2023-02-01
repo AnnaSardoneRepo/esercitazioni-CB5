@@ -1,4 +1,14 @@
 .Navbar{
+    width: 100vw;
     background-color: #fff;
     color: black;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    ul{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        gap: 20px;
+    }
 }
