@@ -1,0 +1,145 @@
+.List {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1{
+    font-family: monospace;
+    margin-bottom: 40px;
+  }
+  h1:before {
+    background-color: #f2f6d5;
+    content: "";
+    height: calc(10% + 3px);
+    position: absolute;
+    right: 290px;
+    top: 5px;
+    transition: background-color 300ms ease-in;
+    width: 100%;
+    z-index: -1;
+  }
+  form {
+    border: 0;
+    display: flex;
+    align-items: center;
+
+    input {
+      border: 1px solid #266db6;
+      box-sizing: border-box;
+      color: #00132c;
+      margin-right: 10px;
+      padding: 20px;
+      font-family: monospace;
+      font-size: 1rem;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    width: 400px;
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid #266db6;
+      box-sizing: border-box;
+      color: #00132c;
+      font-family: monospace;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 15px 20px;
+      margin-bottom: 10px;
+
+    }
+  }
+}
+
+/* CSS */
+.btnAdd {
+  background-color: transparent;
+  border: 1px solid #266db6;
+  box-sizing: border-box;
+  color: #00132c;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.btnAdd:hover,
+.btnAdd:active {
+  outline: 0;
+}
+
+.btnAdd:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btnAdd:before {
+  background-color: #d5edf6;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.btnAdd:hover:before {
+  background-color: #6dcff6;
+}
+
+.btnDel {
+  background-color: transparent;
+  border: 1px solid #b62626;
+  box-sizing: border-box;
+  color: #2c0000;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.btnDel:hover,
+.btnDel:active {
+  outline: 0;
+}
+
+.btnDel:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btnDel:before {
+  background-color: #f6d5d5;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.btnDel:hover:before {
+  background-color: #f66d6d;
+}
+
+@media (min-width: 768px) {
+  .btnAdd .btnDel {
+    padding: 16px 32px;
+  }
+}
+
